@@ -3,58 +3,66 @@
 </div>
 
 <div class="mt-5 mb-lg-5 d-flex justify-content-center">
-  <form class="s-width30" [formGroup]="userFormData" (ngSubmit)="onSubmit()">
+
+  <form  style="width:30%" [formGroup]="userForm"  (ngSubmit)="onSubmit()">
 
     <div class="mb-3 col-lg-12">
 
       <div class="form-group">
-        <app-input-label label="First Name"></app-input-label>
-        <app-input formControlName="firstName"></app-input>
+        <label for="firstName" class="col-form-label text-primary">First Name</label>
+        <input id="firstName" formControlName="firstName" type="text" class="form-control border-primary"/>
+
       </div>
     </div>
     <div class="mb-3">
 
       <div class="form-group">
-        <app-input-label label="Last Name"></app-input-label>
-        <app-input formControlName="lastName"></app-input>
+        <label for="lastName" class="col-form-label text-primary">Last Name</label>
+        <input id="lastName" formControlName="lastName" type="text" class="form-control border-primary"/>
+
       </div>
     </div>
 
     <div class="mb-3 col-lg-12">
 
       <div class="form-group">
-        <app-input-label label="Phone Number"></app-input-label>
-        <app-input formControlName="phoneNumber"></app-input>
+        <label for="phoneNumber" class="col-form-label text-primary">Phone Number</label>
+        <input  id="phoneNumber" formControlName="phoneNumber" type="text" class="form-control border-primary"/>
+
       </div>
     </div>
     <div class="mb-3">
 
       <div class="form-group">
-        <app-input-label label="Email"></app-input-label>
-        <app-input formControlName="email"></app-input>
+        <label for="email" class="col-form-label text-primary">Email</label>
+        <input id="email" formControlName="email" type="text" class="form-control border-primary"/>
       </div>
     </div>
 
     <div class="mb-3">
 
       <div class="form-group">
-   <app-input-label label="Password"></app-input-label>
-        <app-input formControlName="password"></app-input>
+        <label for="password" class="col-form-label text-primary">Password</label>
+        <input  id="password" formControlName="password" type="text" class="form-control border-primary">
       </div>
     </div>
     <div class="mb-4">
-    <div class="form-check">
-<app-input-checkbox id="flexCheckDefault" formControlName="terms"></app-input-checkbox>
-      <label class="form-check-label text-primary" for="flexCheckDefault">
-       By checking this box, you are agreeing to our terms & conditions
-      </label>
+      <div class="form-check">
+        <input class="form-check-input border-primary" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label text-primary" for="flexCheckDefault">
+          By checking this box, you are agreeing to our terms & conditions
+        </label>
+      </div>
     </div>
-    </div>
-
+<br/>
+    <br/>
     <div class="mb-3">
-    <app-button buttonLabel="Create Account"></app-button>
+      <div class="form-group">
+        <div class="d-grid gap-2">
+          <app-button  buttonLabel="Create Account"></app-button>
+        </div>
+      </div>
     </div>
 
   </form>
 </div>
-
