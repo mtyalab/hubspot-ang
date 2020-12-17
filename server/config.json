@@ -1,0 +1,10 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "hubspot_ang",
+    "password": "hubspot_ang",
+    "database": "hubspot_ang"
+  },
+  "secret": "bd45ee67-b7a6-427c-9339-edcb9bff6973"
+}

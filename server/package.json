@@ -1,0 +1,35 @@
+{
+  "name": "core-api",
+  "version": "1.0.0",
+  "description": "backend ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunesis2018/hubspot-ang.git"
+  },
+  "author": "Mutyaba Krista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunesis2018/hubspot-ang/issues"
+  },
+  "homepage": "https://github.com/sunesis2018/hubspot-ang#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-jwt": "^6.0.0",
+    "formidable": "^1.2.2",
+    "joi": "^17.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgen": "^2.0.14",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.15",
+    "rootpath": "^0.1.2",
+    "sequelize": "^6.3.4"
+  }
+}
