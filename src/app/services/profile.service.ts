@@ -3,7 +3,6 @@ import {environment} from '../../environments/environment';
 import {HttpClient} from '@angular/common/http';
 import {Profile} from '../models/profile';
 
-const baseUrl = `${environment.serverUrl}`;
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +10,7 @@ const baseUrl = `${environment.serverUrl}`;
 export class ProfileService {
   constructor(private http: HttpClient) { }
 
-  signUp(userData) {
-    return this.http.post<Profile>(`${baseUrl}/sign-up`, userData);
+  signUp(userData: Profile) {
+    return this.http.post<Profile>(`${environment.serverUrl}/users/register`, userData);
   }
 }
